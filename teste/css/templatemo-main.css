@@ -156,9 +156,13 @@ a:hover { color: #FF0; }
   font-weight: 900;
   text-transform: uppercase;
   margin-bottom: 0px;
-  -webkit-text-stroke: 2px rgb(0, 0, 0);
+  /* -webkit-text-stroke: 2px rgb(0, 0, 0);*/
   
 }
+
+.baner-content h1 {
+  text-shadow: 0 0 20px rgb(0, 0, 0);
+  }
 
 .baner-content em {
   color: #ff7d27;
@@ -172,6 +176,7 @@ a:hover { color: #FF0; }
   font-weight: 300;
   font-size: 48px;
   color: #fff;
+  text-shadow: 0 0 10px rgb(0, 0, 0);
 }
 
 .baner-content .primary-button {
