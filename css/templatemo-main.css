@@ -199,6 +199,68 @@ a:hover { color: #FF0; }
   margin-top: 15px;
 }
 
+.service-contact {
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0vh;
+  background-image: url(../img/5nd-section.jpg);
+  background-attachment: fixed;
+  min-height: 0vh;
+  background-size: cover;
+  background-position: center center;
+}
+
+.service-contact .left-text h4 {
+  font-size: 24px;
+  font-weight: 500;
+  color: #fff;
+}
+
+h4, .h4 {
+  font-size: 18px;
+}
+
+.service-contact .left-text .line-dec {
+  width: 45px;
+  height: 3px;
+  background-color: #ff7d27;
+  margin: 20px 0px 20px 0px;
+}
+
+.service-contact .left-text p {
+  color: #fff;
+}
+
+.service-contact .left-text ul {
+  padding: 0;
+  margin-top: 30px;
+  list-style: none;
+}
+
+.service-contact .left-text ul li {
+  margin: 15px 0px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.service-contact .left-text .primary-button {
+  margin: 30px 0px;
+}
+
+.service-contact .service-item {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 25px 30px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.service-contact .service-item .line-dec {
+  width: 45px;
+  height: 3px;
+  background-color: #ff7d27;
+  margin: 20px auto 15px auto;
+}
 
 
 .service-content {
@@ -316,7 +378,6 @@ h4, .h4 {
   border-radius: 20px;
   background: #fff;
 }
-
 
 .tabs-content {
   padding-left: 15px;
