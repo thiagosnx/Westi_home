@@ -56,15 +56,5 @@ jQuery(document).ready(function($) {
         
     });
 
-    function primary-button () {
-
-      var nome = document.getElementById("name");
-  
-      if (nome.value != "") {
-          alert('Obrigado sr(a) ' + nome.value + ' a mensagem foi enviada com sucesso');
-      }
-  
-  }
-
 
 });
