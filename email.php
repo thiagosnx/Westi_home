@@ -22,7 +22,7 @@ $header ="from:suporte@westi.tech"."\r\n".
              //   header("location:index.html");
              echo("sucesso!!!!");
         
-        }else{echo("Não foi possível enviar o e-mail");
+        }else{header("location:index.html");
         } 
 
 }
