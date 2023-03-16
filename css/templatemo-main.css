@@ -571,6 +571,19 @@ footer em {
   font-style: normal;
 }
 
+.barra-superior {
+  background-color: #282b2f; /* cor de fundo da barra */
+  color: #fff; /* cor do texto da barra */
+  padding: 3px; /* espaçamento interno da barra */
+}
+
+.supdir {
+  position: absolute; /* Define o botão como posicionado */
+  top: 10px; /* Define a distância entre o topo da página e o botão */
+  right: 10px; /* Define a distância entre a direita da página e o botão */
+}
+
+
 @media (max-width: 767px){
   
   .baner-content {
