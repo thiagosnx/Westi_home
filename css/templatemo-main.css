@@ -5,6 +5,13 @@ Vanilla Template
 https://templatemo.com/tm-526-vanilla
 
 */
+
+.limit {
+  max-width: 200px;
+  margin: 20px; /* Centraliza o elemento horizontalmente na página */
+  text-align: center; /* Centraliza o texto dentro do elemento */
+}
+
 figure { width: 90%; min-width: 17.5em; margin:0 auto;}
 figcaption { font: 120% sans-serif; text-align: center;}
 .boxVideo {
@@ -198,6 +205,10 @@ a:hover { color: #FF0; }
 
 .baner-content .primary-button {
   margin-top: 15px;
+}
+
+.responsive-text {
+  font-size: 1em; /* Tamanho da fonte é 16px */
 }
 
 .service-contact {
