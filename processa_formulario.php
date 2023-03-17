@@ -5,7 +5,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   // Obter dados do formulário
   $nome = $_POST['name'];
   $email = $_POST['email'];
-  $mensagem = $_POST['messege'];
+  $mensagem = $_POST['message'];
 
   // Validar e sanitizar dados do formulário aqui
   // ...
