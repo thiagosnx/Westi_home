@@ -1,5 +1,6 @@
 <?php
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+
   // O formulário foi enviado
   // Obter dados do formulário
   $nome = $_POST['name'];
@@ -11,7 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
   // Definir informações de e-mail
   $para = 'wesleigor@hotmail.com';
-  $assunto = 'Novo formulário enviado';
+  $assunto = 'Novo formulario enviado no site';
   $mensagem = "Nome: $nome\nE-mail: $email\nMensagem: $mensagem";
 
   // Enviar e-mail
