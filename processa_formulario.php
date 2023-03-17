@@ -1,0 +1,24 @@
+<?php
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+  // O formulário foi enviado
+  // Obter dados do formulário
+  $nome = $_POST['name'];
+  $email = $_POST['email'];
+  $mensagem = $_POST['messege'];
+
+  // Validar e sanitizar dados do formulário aqui
+  // ...
+
+  // Definir informações de e-mail
+  $para = 'wesleigor@hotmail.com';
+  $assunto = 'Novo formulário enviado';
+  $mensagem = "Nome: $nome\nE-mail: $email\nMensagem: $mensagem";
+
+  // Enviar e-mail
+  mail($para, $assunto, $mensagem);
+
+  // Redirecionar de volta para a página HTML
+  header('Location: thanks.html');
+  exit();
+}
+?>
