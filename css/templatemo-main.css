@@ -304,7 +304,9 @@ h4, .h4 {
 }
 
 .service-content .left-text p {
+  text-shadow: 0 0 10px rgb(0, 0, 0);
   color: #fff;
+  
 }
 
 .service-content .left-text ul {
