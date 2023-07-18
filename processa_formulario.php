@@ -1,6 +1,6 @@
 <?php
 if (!empty($_POST['g-recapcha-response'])){
-  continuar
+  //continuar
 }
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
