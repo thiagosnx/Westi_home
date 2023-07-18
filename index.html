@@ -313,6 +313,11 @@
                                       </fieldset>
                                     </div>
                                     <div class="col-md-12">
+                                        <fieldset>
+                                            <div class="g-recaptcha" data-sitekey="6LeclDMnAAAAAE79m6lYZlchhY89y24bzDErjunu"></div>
+                                        </fieldset>
+                                      </div>
+                                    <div class="col-md-12">
                                       <fieldset>
                                       <button type="submit" id="form-submit" class="btn">Enviar </button>
                                         
@@ -390,6 +395,17 @@
     <script src="js/vendor/bootstrap.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+    <script type="text/javascript">
+        function valida (){
+            if (grecaptcha.getResponse() == ""){
+                alert ("Preencha o Recapcha!!");
+                return false;
+            }
+        }
+    </script>
+
     <script>
         function openCity(cityName) {
             var i;
@@ -400,7 +416,6 @@
             document.getElementById(cityName).style.display = "block";  
         }
     </script>
-
     <script>
         $(document).ready(function(){
           // Add smooth scrolling to all links

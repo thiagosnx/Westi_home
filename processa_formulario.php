@@ -1,4 +1,7 @@
 <?php
+//if (!empty($_POST['g-recapcha-response'])){
+  //continuar
+//}
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
   // O formulário foi enviado
