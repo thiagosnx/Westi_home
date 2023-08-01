@@ -54,18 +54,20 @@ a:hover { color: #FF0; }
 
 .fixed-side-navbar {
   position: fixed;
-  top: 50%;
-  right: 0;
+  top: 20%;
+  left: 0; /* Alterado de 'right: 0' para 'left: 0' */
   z-index: 99999;
   margin-top: -100px;
-  text-align: right;
+  text-align: left; /* Alterado de 'right' para 'left' */
   padding: 30px 0;
   -webkit-transition: all .3s;
   transition: all .3s;
 }
+
 .fixed-side-navbar:hover {
   background: transparent;
 }
+
 .fixed-side-navbar:hover .nav > li > a > span {
   color: rgba(0, 0, 0, 0.5);
   display: block;
@@ -76,19 +78,22 @@ a:hover { color: #FF0; }
   padding: 2px 12px;
   border-radius: 15px;
 }
+
 .fixed-side-navbar .nav > li a.active {
   background-color: transparent;
   color: black;
 }
+
 .fixed-side-navbar .nav > li a.active:after {
   -webkit-transform: scale(0.9);
-          transform: scale(0.9);
+  transform: scale(0.9);
 }
+
 .fixed-side-navbar .nav > li a.active:before {
   content: '';
   position: absolute;
   top: 50%;
-  right: 17px;
+  left: 17px; /* Alterado de 'right' para 'left' */
   margin-top: -8px;
   width: 16px;
   height: 16px;
@@ -96,27 +101,31 @@ a:hover { color: #FF0; }
   border: 2px solid #fff;
   border-radius: 10px;
 }
+
 .nav>li {
   position: relative;
   display: block;
 }
+
 .fixed-side-navbar .nav > li a {
   color: #fff;
   min-height: 32px;
   background: transparent;
-  padding: 5px 45px 5px 25px;
+  padding: 5px 25px 5px 45px; /* Alterado de 'padding: 5px 45px 5px 25px;' para 'padding: 5px 25px 5px 45px;' */
   border-right: none;
 }
+
 .fixed-side-navbar .nav > li a span {
   display: none;
   -webkit-transition: all .2s;
   transition: all .2s;
 }
+
 .fixed-side-navbar .nav > li a:after {
   content: '';
   position: absolute;
   top: 50%;
-  right: 20px;
+  left: 20px; /* Alterado de 'right' para 'left' */
   margin-top: -5px;
   width: 10px;
   height: 10px;
@@ -125,8 +134,9 @@ a:hover { color: #FF0; }
   -webkit-transition: all .3s;
   transition: all .3s;
   -webkit-transform: scale(0.6);
-          transform: scale(0.6);
+  transform: scale(0.6);
 }
+
 .fixed-side-navbar .nav > li a:hover {
   background-color: transparent;
   border-top-left-radius: 5px;
@@ -134,6 +144,7 @@ a:hover { color: #FF0; }
   border-color: black;
   border-right: 0;
 }
+
 .fixed-side-navbar .nav > li a:hover > span {
   color: black;
   display: block;
@@ -141,7 +152,7 @@ a:hover { color: #FF0; }
 
 .fadeInRight {
   -webkit-animation-name: fadeInRight;
-          animation-name: fadeInRight;
+  animation-name: fadeInRight;
 }
 
 
@@ -596,6 +607,12 @@ footer em {
   right: 10px; /* Define a distância entre a direita da página e o botão */
 }
 
+.supesq {
+  position: absolute; /* Define o botão como posicionado */
+  top: 10px; /* Define a distância entre o topo da página e o botão */
+  left: 10px; /* Define a distância entre a direita da página e o botão */
+}
+
 
 @media (max-width: 767px){
   
@@ -864,4 +881,111 @@ body.lb-disable-scrolling {
   cursor: pointer;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
+}
+
+
+.cert {
+  position: relative;
+  display: flex;
+  gap: 5%;
+  flex-wrap: wrap;
+}
+
+.cert .caixa {
+  position: relative;
+  top: 1%;
+  bottom: 1%;
+  width: 30%;
+  padding-bottom: 30%;
+  max-width: 15%;
+  max-height: 15%;
+  margin: auto;
+  display: flex;
+  border-radius: 15px;
+  background-size: contain; /* Ajuste o valor para 'cover', '50%', ou outros conforme necessário */
+  background-repeat: no-repeat; /* Evita repetir a imagem */
+  background-position: center; /* Centraliza a imagem */
+  transition: .5s;
+  cursor: pointer;
+  justify-content: center;
+}
+
+
+.cert .caixa:hover {
+  transform: scale(1.2);
+  transition: .5s;
+}
+
+.cert .caixa::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  border-radius: 15px; /* Usando o mesmo border-radius da imagem principal */
+  background-size: contain; /* Ajuste o valor para 'cover', '50%', ou outros conforme necessário */
+  filter: blur(50px);
+  opacity: 0.5;
+  z-index: 1;
+  transition: .2s;
+
+}
+
+.cert .caixa:hover::before {
+  opacity: 0;
+  transition: .2s;
+}
+
+
+
+
+
+.mini {
+  position: relative;
+  display: flex;
+  gap: 5%;
+
+
+}
+
+.mini .caixa {
+  position: fixed;
+  top: 15px;
+  left: 1%;
+  width: 30%;
+  padding-bottom: 5%;
+  max-width: 5%;
+  max-height: 5%;
+  display: flex;
+  border-radius: 50px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: .5s;
+  cursor: pointer;
+
+}
+
+.mini .caixa:hover {
+  transform: scale(1.2);
+  transition: .5s;
+}
+
+.mini .caixa::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  border-radius: 35px;
+  background-size: contain;
+  filter: blur(50px);
+  opacity: 0.5;
+  z-index: 1;
+  transition: .2s;
+}
+
+.mini .caixa:hover::before {
+  opacity: 0;
+  transition: .2s;
 }
