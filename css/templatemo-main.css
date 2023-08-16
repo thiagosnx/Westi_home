@@ -950,12 +950,12 @@ body.lb-disable-scrolling {
 
 .mini .caixa {
   position: fixed;
-  top: 15px;
+  top: 1%;
   left: 1%;
   width: 30%;
-  padding-bottom: 5%;
-  max-width: 5%;
-  max-height: 5%;
+  padding-bottom: 4%;
+  max-width: 4%;
+  max-height: 4%;
   display: flex;
   border-radius: 50px;
   background-size: cover;
