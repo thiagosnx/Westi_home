@@ -887,7 +887,7 @@ body.lb-disable-scrolling {
 .cert {
   position: relative;
   display: flex;
-  gap: 5%;
+  gap: 2%;
   flex-wrap: wrap;
 }
 
