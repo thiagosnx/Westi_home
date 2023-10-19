@@ -1,0 +1,4 @@
+ALTER TABLE salary
+ADD COLUMN dolar TEXT,
+ADD COLUMN reais TEXT,
+ADD COLUMN euro TEXT;

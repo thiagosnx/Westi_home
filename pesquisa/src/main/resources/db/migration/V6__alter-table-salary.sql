@@ -1,0 +1,2 @@
+ALTER TABLE salary
+ADD COLUMN salario NUMERIC(6,3);

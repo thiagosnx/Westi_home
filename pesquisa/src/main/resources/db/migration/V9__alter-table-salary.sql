@@ -1,0 +1,1 @@
+ALTER TABLE salary DROP COLUMN salario;

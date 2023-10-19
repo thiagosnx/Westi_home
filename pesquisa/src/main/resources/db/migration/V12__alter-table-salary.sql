@@ -1,0 +1,5 @@
+ALTER TABLE salary
+DROP COLUMN reais,
+DROP COLUMN dolar,
+DROP COLUMN euro,
+ADD COLUMN moeda TEXT;
