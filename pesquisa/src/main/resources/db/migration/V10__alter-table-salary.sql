@@ -1,2 +1,0 @@
-ALTER TABLE salary
-ADD COLUMN salario TEXT;

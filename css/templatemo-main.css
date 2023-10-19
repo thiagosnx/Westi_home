@@ -924,7 +924,7 @@ body.lb-disable-scrolling {
   background: inherit;
   border-radius: 15px; /* Usando o mesmo border-radius da imagem principal */
   background-size: contain; /* Ajuste o valor para 'cover', '50%', ou outros conforme necessário */
-  filter: blur(50px);
+  filter: blur(60px);
   opacity: 0.5;
   z-index: 1;
   transition: .2s;
